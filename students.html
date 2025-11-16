@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Students - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.2/dist/full.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js" defer></script>
+  <script src="auth.js" defer></script>
+</head>
+<body class="bg-base-100">
+  <div class="navbar bg-primary text-primary-content">
+    <div class="flex-1 px-4"><span class="font-bold">Students</span></div>
+    <div class="px-4"><span data-user></span></div>
+    <div class="px-4"><button class="btn btn-ghost btn-sm" onclick="toggleTheme()">Toggle Theme</button></div>
+    <div class="px-4"><button class="btn btn-ghost btn-sm" onclick="logout()">Logout</button></div>
+  </div>
+
+  <div class="app-layout">
+    <aside class="sidebar bg-base-200 p-5">
+      <div class="logo mb-6">Welcome To My Institute</div>
+      <nav class="space-y-2">
+        <a class="block link link-hover" href="dashboard.html"> Home</a>
+        <a class="block link link-hover" href="students.html"> Students</a>
+        <a class="block link link-hover" href="courses.html"> Courses</a>
+        <a class="block link link-hover" href="assignments.html"> Assignments</a>
+      </nav>
+    </aside>
+
+    <main class="main p-6">
+      <h1 class="text-2xl font-bold mb-4">Welcome, <span data-user></span></h1>
+      <h1 class="text-2xl font-bold mb-4">Students</h1>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Sandhya Sengani</h3>
+          <p class="text-sm mt-1">Course: Web Development</p>
+          <p class="text-sm mt-1">Email: Sandhya@example.com</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Amit Patel</h3>
+          <p class="text-sm mt-1">Course: Data Structures</p>
+          <p class="text-sm mt-1">Email: amit@example.com</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Sneha Verma</h3>
+          <p class="text-sm mt-1">Course: Python Programming</p>
+          <p class="text-sm mt-1">Email: sneha@example.com</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Bhoomi Shah</h3>
+          <p class="text-sm mt-1">Course: Web Development</p>
+          <p class="text-sm mt-1">Email: Bhoomi@example.com</p>
+        </div>
+
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Ankita Naare</h3>
+          <p class="text-sm mt-1">Course: Python Programming</p>
+          <p class="text-sm mt-1">Email: Ankita@example.com</p>
+        </div>
+
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Aditi Gupta</h3>
+          <p class="text-sm mt-1">Course: Data Structures</p>
+          <p class="text-sm mt-1">Email: Aditi@example.com</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Raj Shah</h3>
+          <p class="text-sm mt-1">Course: Web Development</p>
+          <p class="text-sm mt-1">Email: Raj@example.com</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Nirav Shah</h3>
+          <p class="text-sm mt-1">Course: Data Structures</p>
+          <p class="text-sm mt-1">Email: Nirav@example.com</p>
+        </div>
+
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Aakash  Verma</h3>
+          <p class="text-sm mt-1">Course: Python Programming</p>
+          <p class="text-sm mt-1">Email: Aakash@example.com</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Lokesh Dugar</h3>
+          <p class="text-sm mt-1">Course: Data Structures</p>
+          <p class="text-sm mt-1">Email: Lokesh@example.com</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Khushal Jain</h3>
+          <p class="text-sm mt-1">Course: C++</p>
+          <p class="text-sm mt-1">Email: Khushal@example.com</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Meet Parmar</h3>
+          <p class="text-sm mt-1">Course: Core JAVA </p>
+          <p class="text-sm mt-1">Email: Meet@example.com</p>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>

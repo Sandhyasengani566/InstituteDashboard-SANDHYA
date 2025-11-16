@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Signup - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.2/dist/full.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js" defer></script>
+  <script src="auth.js" defer></script>
+</head>
+<body class="bg-base-100">
+  <header class="navbar bg-primary text-primary-content">
+    <div class="flex-1 px-4"><span class="font-bold">Admin Panel</span></div>
+    <div class="px-4"><button class="btn btn-ghost btn-sm" onclick="toggleTheme()">Toggle Theme</button></div>
+  </header>
+
+  <main class="main">
+    
+    <div class="form-card card bg-base-200 p-6 rounded-lg">
+      <h2 class="text-2xl font-semibold mb-4">Create Account</h2>
+      <form id="signup-form">
+        <label class="block mb-2">Full name
+          <input id="su-name" type="text" required class="input input-bordered w-full mt-1" placeholder="Your name">
+        </label>
+        <label class="block mb-2">Email
+          <input id="su-email" type="email" required class="input input-bordered w-full mt-1" placeholder="you@example.com">
+        </label>
+        <label class="block mb-4">Password
+          <input id="su-pass" type="password" required class="input input-bordered w-full mt-1" placeholder="choose a password">
+        </label>
+        <div class="flex items-center gap-2">
+          <button class="btn btn-primary" type="submit">Create</button>
+          <a class="btn btn-outline" href="login.html">Back to login</a>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

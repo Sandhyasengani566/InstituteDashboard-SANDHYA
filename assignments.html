@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Assignments - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.2/dist/full.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js" defer></script>
+  <script src="auth.js" defer></script>
+</head>
+
+<body class="bg-100">
+  <div class="navbar bg-primary text-primary-content">
+    <div class="flex-1 px-4"><span class="font-bold">Assignments</span></div>
+    <div class="px-4"><span data-user></span></div>
+    <div class="px-4"><button class="btn btn-ghost btn-sm" onclick="toggleTheme()">Toggle Theme</button></div>
+    <div class="px-4"><button class="btn btn-ghost btn-sm" onclick="logout()">Logout</button></div>
+  </div>
+
+  <div class="app-layout">
+    <aside class="sidebar bg-base-200 p-5">
+      <div class="logo mb-6"> Welcome To My Institute </div>
+      <nav class="space-y-2">
+        <a class="block link link-hover" href="dashboard.html"> Home</a>
+        <a class="block link link-hover" href="students.html"> Students</a>
+        <a class="block link link-hover" href="courses.html"> Courses</a>
+        <a class="block link link-hover" href="assignments.html"> Assignments</a>
+      </nav>
+    </aside>
+
+    <main class="main p-6">
+      <h1 class="text-2xl font-bold mb-4">Welcome, <span data-user></span></h1>
+      <h1 class="text-2xl font-bold mb-4">Assignments</h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 1 - HTML/CSS</h3>
+          <p class="text-sm mt-1">Due: 2025-11-20</p>
+          <p class="text-sm mt-1">Status: Pending</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 2 - JavaScript</h3>
+          <p class="text-sm mt-1">Due: 2025-11-25</p>
+          <p class="text-sm mt-1">Status: Pending</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 3 - Cloud Computing </h3>
+          <p class="text-sm mt-1">Due: 2025-12-01</p>
+          <p class="text-sm mt-1">Status: Pending</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 4 - Python Programming </h3>
+          <p class="text-sm mt-1">Due: 2025-11-20</p>
+          <p class="text-sm mt-1">Status: Completed</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 5 - Operating Systems </h3>
+          <p class="text-sm mt-1">Due: 2025-11-25</p>
+          <p class="text-sm mt-1">Status: Pending</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 6 - Data Structures</h3>
+          <p class="text-sm mt-1">Due: 2025-12-01</p>
+          <p class="text-sm mt-1">Status: Pending</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 7 - Core Java</h3>
+          <p class="text-sm mt-1">Due: 2025-12-05</p>
+          <p class="text-sm mt-1">Status: In Progress</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 8 - Algorithms</h3>
+          <p class="text-sm mt-1">Due: 2025-12-10</p>
+          <p class="text-sm mt-1">Status: Not Started</p>
+        </div>
+
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 9 - Maths</h3>
+          <p class="text-sm mt-1">Due: 2025-12-10</p>
+          <p class="text-sm mt-1">Status: Pending</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 10 - Software Engineering </h3>
+          <p class="text-sm mt-1">Due: 2025-12-10</p>
+          <p class="text-sm mt-1">Status: Not Started</p>
+        </div>
+
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 11 - PHP </h3>
+          <p class="text-sm mt-1">Due: 2025-12-10</p>
+          <p class="text-sm mt-1">Status: Completed </p>
+        </div>
+        <div class="card-pro bg-base-100">
+          <h3 class="font-semibold">Assignment 12 - C++ </h3>
+          <p class="text-sm mt-1">Due: 2025-12-10</p>
+          <p class="text-sm mt-1">Status: progress </p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
